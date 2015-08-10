@@ -279,14 +279,11 @@
 }
 
 - (NSDragOperation) tableView:(NSTableView *)tableView validateDrop:(id<NSDraggingInfo>)info proposedRow:(NSInteger)row proposedDropOperation:(NSTableViewDropOperation)dropOperation {
-	NSLog(@"validateDrop %@",info);
 	[tableView setDropRow:self.tableView.numberOfRows dropOperation:dropOperation];
 	return NSDragOperationGeneric;
 }
 
 - (BOOL) tableView:(NSTableView *)tableView acceptDrop:(id<NSDraggingInfo>)info row:(NSInteger)row dropOperation:(NSTableViewDropOperation)dropOperation {
-	NSLog(@"dropOperation %@",info);
-	
 	if([[info draggingPasteboard].types containsObject:NSColorPboardType]) {
 		NSColor * color = [NSColor colorFromPasteboard:[info draggingPasteboard]];
 		
