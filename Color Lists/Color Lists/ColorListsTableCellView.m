@@ -15,13 +15,10 @@ NSString * const ColorListsTableCellViewChange = @"ColorListsTableCellViewChange
 
 - (BOOL) control:(NSControl *)control textShouldBeginEditing:(NSText *)fieldEditor {
 	self.previousText = self.label.stringValue;
-	NSLog(@"should begin editing %@",self.previousText);
 	return TRUE;
 }
 
 - (BOOL) control:(NSControl *)control textShouldEndEditing:(NSText *)fieldEditor {
-	NSLog(@"should end editing: old: %@, new: %@",self.previousText,self.label.stringValue);
-	
 	NSString * newKey = self.label.stringValue;
 	if(!self.previousText) {
 		return TRUE;
