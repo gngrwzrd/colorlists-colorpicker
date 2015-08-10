@@ -9,7 +9,7 @@ NSString * const ColorListsTableCellViewChange = @"ColorListsTableCellViewChange
 
 @implementation ColorListsTableCellView
 
-- (void) awakeFromNib {
+	- (void) awakeFromNib {
 	self.label.delegate = self;
 }
 
