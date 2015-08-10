@@ -12,6 +12,7 @@
 - (void) awakeFromNib {
 	[self setupTableView];
 	[self reloadColorLists];
+	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(onCellChange:) name:ColorListsTableCellViewChange object:nil];
 }
 
 - (void) setupTableView {
@@ -20,6 +21,7 @@
 	[self.tableView registerNib:nib forIdentifier:@"ColorListsTableCellView"];
 	self.tableView.delegate = self;
 	self.tableView.dataSource = self;
+	[self.tableView registerForDraggedTypes:@[NSColorPboardType]];
 }
 
 - (void) reloadColorLists {
@@ -68,6 +70,31 @@
 		return [a compare:b options:NSCaseInsensitiveSearch|NSNumericSearch];
 	}];
 	return sorted;
+}
+
+- (void) onCellChange:(id) sender {
+	NSInteger row = self.tableView.selectedRow;
+	ColorListsTableCellView * cell = (ColorListsTableCellView *)[self.tableView viewAtColumn:0 row:row makeIfNecessary:FALSE];
+	
+	NSString * selectedKey = cell.label.stringValue;
+	[self.tableView reloadData];
+	
+	CLMenuItem * item = (CLMenuItem *)self.colorListsPopup.selectedItem;
+	NSArray * keys = [self sortedKeysForColorList:item.colorList];
+	NSInteger newRow = 0;
+	BOOL found = FALSE;
+	
+	for(NSString * key in keys) {
+		if([key isEqualToString:selectedKey]) {
+			found = TRUE;
+			break;
+		}
+		newRow++;
+	}
+	
+	if(found) {
+		[[self tableView] selectRowIndexes:[NSIndexSet indexSetWithIndex:newRow] byExtendingSelection:FALSE];
+	}
 }
 
 - (void) onCLItem:(CLMenuItem *) item {
@@ -204,6 +231,22 @@
 
 #pragma mark Table View stuff
 
+- (void) keyDown:(NSEvent *)theEvent {
+	if(theEvent.keyCode == 51) {
+		CLMenuItem * item = (CLMenuItem *)self.colorListsPopup.selectedItem;
+		if(self.tableView.selectedRow > item.colorList.allKeys.count) {
+			NSBeep();
+			return;
+		}
+		ColorListsTableCellView * cellView = [self.tableView viewAtColumn:0 row:self.tableView.selectedRow makeIfNecessary:FALSE];
+		if(cellView) {
+			[item.colorList removeColorWithKey:cellView.label.stringValue];
+		}
+		[item.colorList writeToFile:item.filePath];
+		[self.tableView reloadData];
+	}
+}
+
 - (NSInteger) numberOfRowsInTableView:(NSTableView *)tableView {
 	CLMenuItem * menuItem = (CLMenuItem *)[self.colorListsPopup selectedItem];
 	return [menuItem.colorList allKeys].count;
@@ -217,6 +260,8 @@
 	cell.label.stringValue = key;
 	cell.colorView.wantsLayer = TRUE;
 	cell.colorView.layer.backgroundColor = [[colorList colorWithKey:key] CGColor];
+	cell.filePath = item.filePath;
+	cell.colorList = colorList;
 	return cell;
 }
 
@@ -231,6 +276,46 @@
 	NSString * key = [keys objectAtIndex:row];
 	NSColor * color = [colorList colorWithKey:key];
 	[self.main setColor:color];
+}
+
+- (NSDragOperation) tableView:(NSTableView *)tableView validateDrop:(id<NSDraggingInfo>)info proposedRow:(NSInteger)row proposedDropOperation:(NSTableViewDropOperation)dropOperation {
+	NSLog(@"validateDrop %@",info);
+	[tableView setDropRow:self.tableView.numberOfRows dropOperation:dropOperation];
+	return NSDragOperationGeneric;
+}
+
+- (BOOL) tableView:(NSTableView *)tableView acceptDrop:(id<NSDraggingInfo>)info row:(NSInteger)row dropOperation:(NSTableViewDropOperation)dropOperation {
+	NSLog(@"dropOperation %@",info);
+	
+	if([[info draggingPasteboard].types containsObject:NSColorPboardType]) {
+		NSColor * color = [NSColor colorFromPasteboard:[info draggingPasteboard]];
+		
+		CLMenuItem * item = (CLMenuItem *)self.colorListsPopup.selectedItem;
+		NSColorList * list = item.colorList;
+		NSString * untitledKey = @"Untitled";
+		
+		if([list colorWithKey:untitledKey]) {
+			//find next possible key
+			NSUInteger i = 1;
+			BOOL foundKey = FALSE;
+			while(!foundKey) {
+				untitledKey = [NSString stringWithFormat:@"Untitled %lu",i];
+				if(![list colorWithKey:untitledKey]) {
+					foundKey = TRUE;
+				}
+				i++;
+				
+			}
+		}
+		
+		[list setColor:color forKey:untitledKey];
+		[self.tableView reloadData];
+		[list writeToFile:item.filePath];
+		
+		return TRUE;
+	}
+	
+	return FALSE;
 }
 
 @end

@@ -1,8 +1,12 @@
 
 #import <Cocoa/Cocoa.h>
 
-@interface ColorListsTableCellView : NSTableCellView
+extern NSString * const ColorListsTableCellViewChange;
 
+@interface ColorListsTableCellView : NSTableCellView <NSTextFieldDelegate>
+
+@property NSString * filePath;
+@property NSColorList * colorList;
 @property IBOutlet NSTextField * label;
 @property IBOutlet NSView * colorView;
 

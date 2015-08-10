@@ -14,7 +14,6 @@
 		NSBundle * currentBundle = [NSBundle bundleForClass:[self class]];
 		[currentBundle loadNibNamed:@"ColorLists" owner:self.colorLists topLevelObjects:nil];
 	}
-	
 	return self.colorLists.view;
 }
 
