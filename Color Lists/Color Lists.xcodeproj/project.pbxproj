@@ -1,0 +1,425 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0771B76A1B78317A009627A5 /* ColorListsMain.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 0771B7691B78317A009627A5 /* ColorListsMain.tiff */; };
+		0771B7711B783998009627A5 /* ColorListsLargeIcon.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 0771B76F1B783998009627A5 /* ColorListsLargeIcon.tiff */; };
+		0771B7721B783998009627A5 /* ColorListsLargeIcon@2x.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 0771B7701B783998009627A5 /* ColorListsLargeIcon@2x.tiff */; };
+		07C306051B77FA1E0050C794 /* ColorListsMain.m in Sources */ = {isa = PBXBuildFile; fileRef = 07C306041B77FA1E0050C794 /* ColorListsMain.m */; };
+		07C306091B77FAED0050C794 /* ColorLists.m in Sources */ = {isa = PBXBuildFile; fileRef = 07C306071B77FAED0050C794 /* ColorLists.m */; };
+		07C3060A1B77FAED0050C794 /* ColorLists.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07C306081B77FAED0050C794 /* ColorLists.xib */; };
+		07C306141B77FFAE0050C794 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 07C306131B77FFAE0050C794 /* main.m */; };
+		07C3061D1B7804E20050C794 /* ColorListsTableCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 07C3061C1B7804E20050C794 /* ColorListsTableCellView.m */; };
+		07C3061F1B7805080050C794 /* ColorListsTableCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07C3061E1B7805080050C794 /* ColorListsTableCellView.xib */; };
+		07C306221B7807500050C794 /* CLMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 07C306211B7807500050C794 /* CLMenuItem.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		07C306181B77FFE30050C794 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 07C305EE1B77F9CA0050C794 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 07C305F51B77F9CA0050C794;
+			remoteInfo = "Color Lists";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		07C3060F1B77FFAE0050C794 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0771B7691B78317A009627A5 /* ColorListsMain.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = ColorListsMain.tiff; sourceTree = "<group>"; };
+		0771B76F1B783998009627A5 /* ColorListsLargeIcon.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = ColorListsLargeIcon.tiff; sourceTree = "<group>"; };
+		0771B7701B783998009627A5 /* ColorListsLargeIcon@2x.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = "ColorListsLargeIcon@2x.tiff"; sourceTree = "<group>"; };
+		07C305F61B77F9CA0050C794 /* Color Lists.colorPicker */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Color Lists.colorPicker"; sourceTree = BUILT_PRODUCTS_DIR; };
+		07C305FA1B77F9CA0050C794 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		07C306031B77FA1E0050C794 /* ColorListsMain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorListsMain.h; sourceTree = "<group>"; };
+		07C306041B77FA1E0050C794 /* ColorListsMain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorListsMain.m; sourceTree = "<group>"; };
+		07C306061B77FAED0050C794 /* ColorLists.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorLists.h; sourceTree = "<group>"; };
+		07C306071B77FAED0050C794 /* ColorLists.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorLists.m; sourceTree = "<group>"; };
+		07C306081B77FAED0050C794 /* ColorLists.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ColorLists.xib; sourceTree = "<group>"; };
+		07C306111B77FFAE0050C794 /* TextEdit */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = TextEdit; sourceTree = BUILT_PRODUCTS_DIR; };
+		07C306131B77FFAE0050C794 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		07C3061B1B7804E20050C794 /* ColorListsTableCellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorListsTableCellView.h; sourceTree = "<group>"; };
+		07C3061C1B7804E20050C794 /* ColorListsTableCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorListsTableCellView.m; sourceTree = "<group>"; };
+		07C3061E1B7805080050C794 /* ColorListsTableCellView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ColorListsTableCellView.xib; sourceTree = "<group>"; };
+		07C306201B7807500050C794 /* CLMenuItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLMenuItem.h; sourceTree = "<group>"; };
+		07C306211B7807500050C794 /* CLMenuItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLMenuItem.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		07C305F31B77F9CA0050C794 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07C3060E1B77FFAE0050C794 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		07C305ED1B77F9CA0050C794 = {
+			isa = PBXGroup;
+			children = (
+				07C305F81B77F9CA0050C794 /* Color Lists */,
+				07C306121B77FFAE0050C794 /* TextEdit */,
+				07C305F71B77F9CA0050C794 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		07C305F71B77F9CA0050C794 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				07C305F61B77F9CA0050C794 /* Color Lists.colorPicker */,
+				07C306111B77FFAE0050C794 /* TextEdit */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		07C305F81B77F9CA0050C794 /* Color Lists */ = {
+			isa = PBXGroup;
+			children = (
+				07C306201B7807500050C794 /* CLMenuItem.h */,
+				07C306211B7807500050C794 /* CLMenuItem.m */,
+				07C306061B77FAED0050C794 /* ColorLists.h */,
+				07C306071B77FAED0050C794 /* ColorLists.m */,
+				07C306081B77FAED0050C794 /* ColorLists.xib */,
+				07C306031B77FA1E0050C794 /* ColorListsMain.h */,
+				07C306041B77FA1E0050C794 /* ColorListsMain.m */,
+				07C3061B1B7804E20050C794 /* ColorListsTableCellView.h */,
+				07C3061C1B7804E20050C794 /* ColorListsTableCellView.m */,
+				07C3061E1B7805080050C794 /* ColorListsTableCellView.xib */,
+				07C305F91B77F9CA0050C794 /* Supporting Files */,
+			);
+			path = "Color Lists";
+			sourceTree = "<group>";
+		};
+		07C305F91B77F9CA0050C794 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0771B76F1B783998009627A5 /* ColorListsLargeIcon.tiff */,
+				0771B7701B783998009627A5 /* ColorListsLargeIcon@2x.tiff */,
+				0771B7691B78317A009627A5 /* ColorListsMain.tiff */,
+				07C305FA1B77F9CA0050C794 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		07C306121B77FFAE0050C794 /* TextEdit */ = {
+			isa = PBXGroup;
+			children = (
+				07C306131B77FFAE0050C794 /* main.m */,
+			);
+			path = TextEdit;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		07C305F51B77F9CA0050C794 /* Color Lists */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 07C305FD1B77F9CA0050C794 /* Build configuration list for PBXNativeTarget "Color Lists" */;
+			buildPhases = (
+				07C305F21B77F9CA0050C794 /* Sources */,
+				07C305F31B77F9CA0050C794 /* Frameworks */,
+				07C305F41B77F9CA0050C794 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Color Lists";
+			productName = "Color Lists";
+			productReference = 07C305F61B77F9CA0050C794 /* Color Lists.colorPicker */;
+			productType = "com.apple.product-type.bundle";
+		};
+		07C306101B77FFAE0050C794 /* TextEdit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 07C306151B77FFAE0050C794 /* Build configuration list for PBXNativeTarget "TextEdit" */;
+			buildPhases = (
+				07C3060D1B77FFAE0050C794 /* Sources */,
+				07C3060E1B77FFAE0050C794 /* Frameworks */,
+				07C3060F1B77FFAE0050C794 /* CopyFiles */,
+				07C3061A1B78004E0050C794 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				07C306191B77FFE30050C794 /* PBXTargetDependency */,
+			);
+			name = TextEdit;
+			productName = TextEdit;
+			productReference = 07C306111B77FFAE0050C794 /* TextEdit */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		07C305EE1B77F9CA0050C794 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = gngrwzrd;
+				TargetAttributes = {
+					07C305F51B77F9CA0050C794 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					07C306101B77FFAE0050C794 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+				};
+			};
+			buildConfigurationList = 07C305F11B77F9CA0050C794 /* Build configuration list for PBXProject "Color Lists" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 07C305ED1B77F9CA0050C794;
+			productRefGroup = 07C305F71B77F9CA0050C794 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				07C305F51B77F9CA0050C794 /* Color Lists */,
+				07C306101B77FFAE0050C794 /* TextEdit */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		07C305F41B77F9CA0050C794 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0771B7711B783998009627A5 /* ColorListsLargeIcon.tiff in Resources */,
+				0771B7721B783998009627A5 /* ColorListsLargeIcon@2x.tiff in Resources */,
+				0771B76A1B78317A009627A5 /* ColorListsMain.tiff in Resources */,
+				07C3060A1B77FAED0050C794 /* ColorLists.xib in Resources */,
+				07C3061F1B7805080050C794 /* ColorListsTableCellView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		07C3061A1B78004E0050C794 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "rm \"/Users/aaronsmith/Library/ColorPickers/Color Lists.colorPicker\"\ncp -rf \"build/Debug/Color Lists.colorPicker\" ~/Library/ColorPickers/\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		07C305F21B77F9CA0050C794 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07C3061D1B7804E20050C794 /* ColorListsTableCellView.m in Sources */,
+				07C306051B77FA1E0050C794 /* ColorListsMain.m in Sources */,
+				07C306221B7807500050C794 /* CLMenuItem.m in Sources */,
+				07C306091B77FAED0050C794 /* ColorLists.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07C3060D1B77FFAE0050C794 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07C306141B77FFAE0050C794 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		07C306191B77FFE30050C794 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 07C305F51B77F9CA0050C794 /* Color Lists */;
+			targetProxy = 07C306181B77FFE30050C794 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		07C305FB1B77F9CA0050C794 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		07C305FC1B77F9CA0050C794 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		07C305FE1B77F9CA0050C794 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Color Lists/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = colorPicker;
+			};
+			name = Debug;
+		};
+		07C305FF1B77F9CA0050C794 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Color Lists/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = colorPicker;
+			};
+			name = Release;
+		};
+		07C306161B77FFAE0050C794 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		07C306171B77FFAE0050C794 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		07C305F11B77F9CA0050C794 /* Build configuration list for PBXProject "Color Lists" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07C305FB1B77F9CA0050C794 /* Debug */,
+				07C305FC1B77F9CA0050C794 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		07C305FD1B77F9CA0050C794 /* Build configuration list for PBXNativeTarget "Color Lists" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07C305FE1B77F9CA0050C794 /* Debug */,
+				07C305FF1B77F9CA0050C794 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		07C306151B77FFAE0050C794 /* Build configuration list for PBXNativeTarget "TextEdit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07C306161B77FFAE0050C794 /* Debug */,
+				07C306171B77FFAE0050C794 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 07C305EE1B77F9CA0050C794 /* Project object */;
+}
